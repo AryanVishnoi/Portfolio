@@ -1,0 +1,156 @@
+#about h1,
+h3,
+h5 {
+  text-align: center;
+}
+
+/* About.css */
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 20px;
+  font-size: 2.5em;
+  animation: fadeIn 1s ease-out;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin: 20px auto;
+  width: 80%;
+  font-size: 1.2em;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Section Styles */
+
+#about {
+  padding: 20px;
+}
+
+/* Education and Experience Sections */
+
+.education,
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.education div,
+.experience div {
+  margin-bottom: 20px;
+  text-align: center;
+  /* Ensure text is centered within the div */
+  /* width: auto; */
+  /* Allows div to grow with content */
+  /* display: inline-block; */
+  /* Adjust div to fit content */
+  vertical-align: top;
+  /* Align divs vertically */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education div:hover,
+.experience div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education h5,
+.experience h5 {
+  color: #d16f9d;
+  font-size: 1.4em;
+  animation: slideIn 1s ease-out;
+}
+
+.education p,
+.experience p {
+  color: #e6c8c8;
+  font-size: 1.1em;
+  animation: slideIn 1s ease-out;
+  /* white-space: nowrap; */
+  /* Prevents text from wrapping */
+  /* overflow: hidden; */
+  /* Hides overflow text */
+  /* text-overflow: ellipsis; */
+  /* display: inline; */
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right,
+.left {
+  text-align: center;
+  /* Center text inside the divs */
+  white-space: nowrap;
+  /* Prevent text from wrapping to a new line */
+  display: inline-block;
+  /* Ensure divs only take up as much space as needed */
+  vertical-align: top;
+  /* Align the divs to the top if they are inline-block */
+  margin: 0;
+  /* Reset default margin */
+  padding: 0;
+  /* Reset default padding */
+}
+
+/* Specific styles for the right div */
+
+.right {
+  width: 50vw;
+  /* Set width to 50% of the viewport width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+
+/* Ensure paragraphs inside the right div do not overflow */
+
+.right p {
+  margin: 20px auto;
+  /* Add vertical margin to paragraphs for spacing */
+  padding: 0;
+  /* Remove any extra padding */
+}
+
+/* Additional styles for left div if needed */
+
+.left {
+  width: 50vw;
+  /* Set width to 50% of the viewport width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}

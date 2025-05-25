@@ -1,0 +1,101 @@
+/* General Navbar Styles */
+
+nav {
+  background-color: rgb(2, 2, 31);
+  /* Dark navy background */
+  padding: 10px 20px;
+  /* Add padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color change */
+}
+
+/* Navbar Brand Styles */
+
+.navbar-brand {
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+  /* Inherit color based on theme */
+  transition: color 0.3s ease;
+  /* Smooth transition for color change */
+}
+
+.navbar-brand:hover {
+  color: #61dafb;
+  /* React logo blue on hover */
+}
+
+/* Navbar Links */
+
+.nav-pills .nav-link {
+  color: inherit;
+  /* Inherit color based on theme */
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #131231;
+  /* Slightly darker shade on hover */
+  color: #61dafb;
+  /* React logo blue on hover */
+}
+
+/* Active Nav Link */
+
+.nav-pills .nav-link.active {
+  background-color: #61dafb;
+  /* React logo blue for active link */
+  color: #fff;
+  /* White text for contrast */
+}
+
+/* Switch for Theme Mode */
+
+li div {
+  padding-right: 2rem;
+  padding-top: 7px;
+}
+
+.form-check-input {
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:checked {
+  background-color: #61dafb;
+  /* React logo blue when checked */
+  border-color: #61dafb;
+}
+
+.form-check-label {
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive Navbar Adjustments */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .nav-pills .nav-link {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+  li div {
+    padding-right: 1rem;
+  }
+}
