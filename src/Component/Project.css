@@ -1,0 +1,126 @@
+/* Project.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f8f9fa;
+    color: white; */
+}
+
+h1 {
+    text-align: center;
+    color: #75889b;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+
+/* p {
+  text-align: center;
+  color: #99aab8;
+  margin: 20px auto;
+  width: 60%;
+  font-size: 1.2em;
+  line-height: 1.5;
+} */
+
+p {
+    color: rgb(233, 195, 195);
+}
+
+.projectcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.card_group {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.projectcards .card {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    width: 400px;
+    background-color: #031b35;
+    /* Blue background color */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: flip-in 2s ease-in-out;
+    /* Apply flip-in on page load */
+}
+
+@keyframes flip-in {
+    from {
+        transform: perspective(1000px) rotateX(-180deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(1000px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+    /* Zoom in slightly and lift on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ebeef0;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #bbc3ca;
+}
+
+.card-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e9ecef;
+    padding: 10px;
+    text-align: right;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.text-body-secondary {
+    color: #6c757d !important;
+}
+
+.card-footer img {
+    width: 50px;
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
